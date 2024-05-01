@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>我是浏览器的标题</title>
+</head>
+<body>
+    <h1>我是一级标题</h1>
+    <h2>我是二级标题</h2>
+    <h3>我是三级标题</h3>
+    <p>我是一个段落</p>
+    <div>
+        <!--标题h不能互相嵌套，p标签也不能和标题标签互相嵌套-->
+        div标签没有什么意义,用于整体布局
+    </div>
+    <span>span是一个包裹短句的标签</span>
+    <p>哈哈哈 <strong>这是比较重要的内容</strong></p>
+    <p>嘟嘟嘟 <em>这是一般重要的内容</em></p>
+    <!-- 相对路径: ./代表当前目录 || ../代表上一级目录 || ../../ 代表上上级目录 依次类推
+    <img src="./start.jpg" alt="图片的描述">
+    <img src="../灰太狼.jpg" alt="灰太狼"> -->
+    <a href="https://developer.mozilla.org/" target="_blank">打开一个新的页签</a>
+    <a href="https://www.baidu.com" target="_self">去百度 在本页面打开</a>
+    <a href="./hello.html">跳转到本地文件</a>
+    <a href="./resource.html/内部资源.zip">浏览器不能打开的文件,会自动触发下载</a>
+    <a href="./resource/小电影.mp4" download>强制触发下载</a>
+
+    <!-- 锚点 用作跳转链接-->
+    <a href="#tel">跳转到start</a>
+    <a href="#idd">这是p标签的锚点</a>
+
+    <a name="tel"></a>
+    <p>这是一个name的锚点链接</p>
+
+    <p id="idd">这是p标签的锚点</p>
+
+    <a href="#">回到顶部</a>
+    <a href="">刷新页面</a>
+
+    <!-- 唤起设备拨号 -->
+    <a href="tel:10010">电话联系</a>
+    <!-- 唤起设备发送邮件 -->
+    <a href="mailto:10010@qq.com">邮件联系</a>
+    <!-- 唤起设备发送短信 -->
+    <a href="sms:10086">短信联系</a>
+    
+</body>
+</html>
