@@ -1,0 +1,45 @@
+/*这是通配选择器*/
+* {
+    color: aqua;
+    font-size: 30px;
+}
+
+/*这是元素选择器*/
+p {
+    color: rebeccapurple;
+    font-size: 40px;
+}
+
+/*这是类选择器*/
+.dodo {
+    color: blanchedalmond;
+    font-size: 50px;
+}
+
+/*这是id选择器*/
+#ii {
+    color: blue;
+    font-size: medium;
+}
+
+/*CSS复合选择器*/
+/*交集选择器：选中同时符合多个条件的元素*/
+p.hehe {
+    color: aquamarine;
+    font-size: large
+}
+
+/* 选中：类名包含rich和beauty的元素*/
+.xiao.dada {
+    color: aqua;
+    font-size: 40px;
+}
+
+/*并集选择器
+作用：选中多个选择器对应的元素，又称：分组选择器。*/
+#ii,
+.dodo,
+.xiao {
+    color: blueviolet;
+    font-size: 30px;
+}
