@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formStudy</title>
+</head>
+<body>
+    <form action="https://www.baidu.com" target="_blank" method="get">
+        <input type="text" name="wd" value="西瓜">
+        <button>去百度</button><br>
+        <input type="radio" name="sex" value="nan" checked>男
+        <input type="radio" name="sex" value="nv">女<br>
+        <input type="checkbox" name="hobby" value="smoke" checked>抽烟
+        <input type="checkbox" name="hobby" value="drink">喝酒
+        <input type="checkbox" name="hobby" value="good">洗头<br>
+        <input type="hidden" name="dodo" value="zhangsan"><br>
+        <input type="submit" value="点我提交">
+        <input type="reset" name="点我重置" disabled><br>
+        <textarea name="msg" cols="10" rows="10">我是文本输入区域</textarea><br>
+        offer: <select name="from">
+            <option value="腾讯" disabled>tenxun</option>
+            <option value="zijie">字节</option>
+            <option value="阿里" selected>ali</option>
+        </select>
+
+        <fieldset>
+            <legend>这是label标签用法</legend>
+            <label for="dodo">账户：</label>
+            <input type="text" id="dodo" name="account" maxlength="20"><br>
+            <label>
+                密码：
+                <input type="password" id="mima" maxlength="10" name="pwd">
+            </label>
+            <br>
+            性别：
+            <input type="radio" name="gender" id="nan">
+            <label for="nan">男</label>
+            <input type="radio" name="gengder" id="nv">
+            <label for="nv">女</label>
+        </fieldset>
+    </form>
+</body>
+</html>
