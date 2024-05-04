@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>伪类选择器</title>
+    <style>
+        a:link {
+            color: rgb(12, 208, 28);
+        }
+        a:visited {
+            color: black;
+        }
+        a:hover {
+            color: chocolate;
+        }
+        a:active {
+            color:cyan;
+        }
+        span:link {
+            color: aqua;
+        }
+        span:hover {
+            color: blanchedalmond;
+        }
+        input:focus,select:focus{
+            color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <a href="https://www.baidu.com">去百度</a>
+    <a href="https://www.jd.com/">去京东</a><br>
+    <span>dhahhahaha</span><br>
+    <input type="text">
+    <input type="text">
+    <select name="sss">
+        <option value="1333">大同</option>
+        <option value="222">太原</option>
+        <option value="333">北京</option>
+    </select>
+</body>
+</html>
