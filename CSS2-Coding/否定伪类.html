@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>否定伪类</title>
+    <style>
+        div>span:not(.no) {
+            color: aqua;
+        }
+        div>span:not([title="tt"]) {
+            color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <span>hahdahdhadh</span>
+        <p class="no">djajdjadjajja</p>
+        <span title="tt">djadjajdjadj</span>
+        <p class="no">111123333333</p>
+    </div>
+</body>
+</html>

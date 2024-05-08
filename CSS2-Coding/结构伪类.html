@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>结构伪类</title>
+    <style>
+        /*选中div的第一个儿子p元素*/
+        div>p:first-child {
+            color: aqua;
+        }
+        /*选中div的最后一个儿子p元素*/
+        div>p:last-child {
+            color: rgb(34, 213, 49);
+        }
+        /*选中div的第n个儿子p元素*/
+        div>p:nth-child(2) {
+            color: aquamarine;
+        }
+        /*所有同类型兄弟元素中的第一个*/
+        div>span:first-of-type {
+            color: blanchedalmond;
+        }
+        /*所有同类型兄弟元素中的最后一个。*/
+        div>span:last-of-type {
+            color: rgb(10, 44, 211);
+        }
+        /*所有同类型兄弟元素中的 第n个 。*/
+        div>span:nth-of-type(2) {
+            color: rgb(195, 27, 91);
+        }
+        /*  关于n
+            2n 或 even ：选中序号为偶数的子元素。
+            5. 2n+1 或 odd ：选中序号为奇数的子元素。
+            6. -n+3 ：选中的是前 3 个*/
+    </style>
+</head>
+<body>
+    <div>
+        <span>兄弟1111</span>
+        <p>1111111</p>
+        <span>兄弟2222</span>
+        <p>2222222</p>
+        <span>兄弟3333</span>
+        <p>3333333</p>
+        <p>4444444</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI伪类</title>
+    <style>
+        /* 选中的是勾选的复选框或单选按钮 */
+        input:checked {
+            width: 100px;
+            height: 100px;
+        }
+        /* 选中的是被禁用的input元素 */
+        input:disabled {
+            background-color: gray;
+        }
+        /* 选中的是可用的input元素 */
+        input:enabled {
+            background-color: #0dc219;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" disabled>
+    <input type="radio" name="video">
+    <input type="radio" name="video">
+    <input type="checkbox">
+    <input type="text">
+</body>
+</html>
