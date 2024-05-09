@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>字体样式</title>
+    <style>
+        .cc {
+            color: aqua;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 40px;
+            font-style: italic;
+            font-weight: bold;
+        }
+        #ii {
+            font-size: 30px;
+            font-family: "翩翩体-简";
+            font-style: oblique;
+            font-weight: bolder;
+        }
+        .fon {
+            font:bold italic 50px "微软雅黑";
+        }
+        /*1. font-weight:100~1000 且无单位，数值越大，字体越粗 （或一样粗，具体得看字体设计时的
+            精确程度）。
+        2. 100~300 等同于 lighter ， 400~500 等同于 normal ， 600 及以上等同于
+        bold 。*/
+    </style>
+</head>
+<body>
+    <div>
+        <span class="cc">111111</span><br>
+        <span id="ii">222222</span>
+        <p class="fon">333333333</p>
+        <p>44444444</p>
+    </div>
+</body>
+</html>
